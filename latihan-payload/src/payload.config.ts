@@ -10,6 +10,7 @@ import Users from './collections/Users'
 import Customers from './collections/Customers'
 
 export default buildConfig({
+  serverURL: process.env.PAYLOAD_PUBLIC_SERVER_URL,
   admin: {
     user: Users.slug,
     bundler: webpackBundler(),
